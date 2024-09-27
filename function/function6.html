@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //자바스크립트 내장함수
+      // alert()
+      // isNaN()
+      // parseInt() or Number()
+      // parseFloat()
+      // prompt()
+
+      // URL(Uniform Resource Locator) : 주소
+      // URL(Uniform Resource  Identifier) : 식별 => URL 포함하는 개념
+
+      // encodeURI() : 영문,숫자,일부기호만 제외 후 나머지 인코딩
+      document.write(
+        encodeURI("http://localhost:5500/basic/info.html?name=홍길동")
+      );
+      document.write(
+        decodeURI("http://localhost:5500/basic/info.html?name=홍길동")
+      );
+      document.write("<br>");
+      document.write(
+        encodeURI("http://localhost:5500/basic/info.html?name=홍길동&age=15")
+      );
+
+      //ms
+      //   setTimeout(() => {
+      //     alert("3초가 지났습니다.");
+      //   }, 3000);
+
+      setInterval(() => {
+        console.log("안녕!!");
+      }, 2000);
+    </script>
+  </body>
+</html>
